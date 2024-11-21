@@ -1,0 +1,31 @@
+Local Variables: A local Variable Accessible within the function where they are defined and it is exists only during the function exexution.
+For example:
+	def my_var():
+    	local_var = 5  # Local variable
+    	print(local_var)  # Accessing local variable
+
+Global Variabels: A Global Variable accessible throuhout the whole program, including all functions and defined outside any function or class. That Variable ends for the duration of the program's execution.
+For example:
+	global_var = 10  # Global variable
+	def my_var():
+    	print(global_var)  # Accessing global variable
+
+NonLocal Variable: nonlocal assigns to variables in an outer scope, but not a global scope.
+For example:
+	def outer():
+    	    x = “local”
+ 
+    	def inner():
+             nonlocal x
+             x = “nonlocal”
+             print(“inner:”, x)
+ 
+    	inner()
+    	print(“outer:”, x)
+
+
+
+
+
+
+

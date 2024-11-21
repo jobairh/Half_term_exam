@@ -1,0 +1,3 @@
+The reshape operation is the same data is reorganized into an array with 8 rows and 2 columns.
+
+dot product of a matrix with its transpose gives a new matrix.
